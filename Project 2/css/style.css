@@ -1,0 +1,166 @@
+
+/* Base Element Styles --------- */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1.25em;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: auto;
+    max-width: 1024px;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+h2 {
+    align-items: center;
+    margin: auto;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+/* Base Layout Styles ----------*/
+
+
+
+.main-nav {
+    line-height: 1.5em;
+    display: block;
+    list-style: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 25px;
+    letter-spacing: .05em;
+}
+.main-nav li {
+    padding: 10px;
+}
+
+.card-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    align-content: center;
+    background-color: whitesmoke;
+    margin-top: 2em;
+    margin-bottom: 5em;
+    padding: 0;
+}
+.card,
+.card-1 {
+    color: rgb(134, 134, 134);
+}
+.col {
+    padding-right: 1em;
+    padding-left: 1em;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.hide {
+    display: none;
+}
+.top {
+    float: right;
+}
+
+
+/* Media Queries ------ */
+
+@media (min-width: 768px) {
+    .main-header,
+    .main-nav, 
+    .container,
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-header {
+        flex-direction: column;
+    }
+    .main-nav {
+        text-align: center;
+    }
+    .main-nav li {
+        display: inline-block;
+    }
+    
+    .intro {
+        text-align: left;
+        display: flex;
+        order: -1;
+    }
+    .intro_pic {
+        display: flex;
+    }
+    .card-1 {
+        display: inline-block;
+        flex-direction: column;
+    }
+    .container {
+        flex-wrap: wrap;
+    }
+    .col {
+        flex: 1 50%;
+        flex-wrap: wrap;
+    }
+    .hide {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight:bold;
+        justify-content: space-between;
+    }
+    .hide li {
+        padding: 10px;
+    }
+    .top {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+   .col {
+       flex: 3 33.33%;
+   }
+}
