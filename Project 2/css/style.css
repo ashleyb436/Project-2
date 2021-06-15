@@ -2,6 +2,7 @@
 /* Base Element Styles --------- */
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -16,7 +17,6 @@ a {
     text-decoration: none;
 }
 body {
-    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     margin: auto;
     max-width: 1024px;
@@ -45,6 +45,9 @@ footer {
     justify-content: space-between;
     align-items: center;
 } 
+footer nav {
+    display: flex;
+}
 
 /* Base Layout Styles ----------*/
 
@@ -95,7 +98,7 @@ footer {
     display: none;
 }
 .top {
-    float: right;
+    display: flex;
 }
 
 
